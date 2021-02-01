@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Detection of cardiovascular diseases risks</title>
+</head>
+<body>
+   <h1>Welcome to the cardiovascular diseases risks detection algorithm</h1>
+   <h2>An algorithm can predict you cardiovascular diseases risks!</h2>
+	<p>Enter your caracteristics:
+   		<FORM name="Input_characteristics" action="http://localhost:5000/result" method="post">
+		<input name="name" placeholder="Name" size="20" required>
+		<input name="age" placeholder="Age (years)" size="20" required>
+		<input name="gender" placeholder="Gender (1: female, 2: male)" size="20" required>
+		<input name="height" placeholder="Size (cm)" size="20" required>
+		<input name="ap_hi" placeholder="Systolic blood pressure" size="20" required>
+		<input name="ap_lo" placeholder="Diastolic blood pressure" size="20" required>
+		<input name="cholesterol" placeholder="Cholesterol (1: normal, 2: above normal, 3: well above normal)" size="20" required>
+		<input name="glucose" placeholder="Glucose (1: normal, 2: above normal, 3: well above normal)" size="20" required>
+		<input name="smoke" placeholder="Smokeer? (0:no, 1:yes)" size="20" required>
+		<input name="alcohol" placeholder="Drink alcohol ? (0:no, 1:yes)" size="20" required>
+		<input name="activity" placeholder="Practice of sport (0:no, 1:yes)" size="20" required>
+		<input type="submit">
+		</FORM>
+	</p>
+</body>
+</html>
+
