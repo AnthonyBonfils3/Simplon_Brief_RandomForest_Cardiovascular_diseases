@@ -6,37 +6,49 @@
     <title>Detection of cardiovascular diseases risks</title>
 </head>
 <body>
-   <h1>Resultat pour : {{name}}</h1>
-   if ({{pred}}==0) {
-      <h2>You seems to be in good health -> Probability of cardivascular diseases : {{proba*100}} %</h2>
-   } else {
-      <h2>You would have to see a doctor -> Probability of cardivascular diseases : {{proba*100}} %</h2>
-      <br>
-      <br>
-      <video src="https://youtu.be/Y5JAO1A3EW8"></video>
-      <br>
-      <br>
-      <h2>Risque de maladies cario-vasculaire</h2>
-      <h2>NON MODIFIABLES :</h2>
-      <p>
-         <ul>   
-            <li>Age</li>
-            <li>Genre</li>
-            <li>Génétique</li>
-         </ul>         
-      </p>
-      <h2>MODIFIABLE :</h2>
-      <p>
-         <ul>
-            <li>Hypertension</li>
-            <li>Cholesterol</li>
-            <li>Glycémie</li>
-            <li>Obésité</li>
-            <li>Sédentarité</li>
-            <li>Tabac</li>
-         </ul>   
-      </p>
-      <h1>VOUS AVEZ TOUTES LES CARTES EN MAIN : AGISSEZ!!!</h1>
-   }
+	<section class="centered_section">
+      <h1>Resultat pour : {{name}}</h1>
+      <!-- if ({{pred}}===0) { -->
+         <h2>You seems to be in good health -> Probability of cardivascular diseases : {{proba*100}} %</h2>
+      <!-- } else {
+         <h2>You would have to see a doctor -> Probability of cardivascular diseases : {{proba*100}} %</h2> -->
+         <br>
+         <br>
+         <!-- <video src=https://youtu.be/Y5JAO1A3EW8></video> -->
+         <!-- <video width="320" height="240" controls>
+            <source src="https://youtu.be/Y5JAO1A3EW8" type="video/mp4">
+         Your browser does not support the video tag.
+         </video>  -->
+         <iframe class="centered_video" width="640" height="360" src="https://www.youtube.com/embed/Y5JAO1A3EW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <br>
+         <br>
+         <h2>Risque de maladies cario-vasculaire</h2>
+         <h2>NON MODIFIABLES :</h2>
+         <p>
+            <ul>   
+               <li>Age</li>
+               <li>Genre</li>
+               <li>Génétique</li>
+            </ul>         
+         </p>
+         <h2>MODIFIABLE :</h2>
+         <p>
+            <ul>
+               <li>Hypertension</li>
+               <li>Cholesterol</li>
+               <li>Glycémie</li>
+               <li>Obésité</li>
+               <li>Sédentarité</li>
+               <li>Tabac</li>
+            </ul>   
+         </p>
+         <h1>VOUS AVEZ TOUTES LES CARTES EN MAIN : AGISSEZ!!!</h1>
+      <!-- } -->
+   </section>
 </body>
+<footer class="footer">
+   <h2>Ecole IA MICROSOFT Powered by SIMPLON</h2>
+   <h2>Promo 2020 / 2022</h2>
+   <h2>Par Anthony Bonfils</h2>
+</footer>
 </html>

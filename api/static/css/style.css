@@ -1,7 +1,13 @@
-body {
+body 
+{ 
 	background-image: url( img/background.jpg );
 	background-attachment: fixed;
-	max-width: 80vw;
+    background-size: cover;
+}
+
+.centered_section
+{
+	max-width:80vw;
 	display: flex;
 	padding-left: 10vw;
 	padding-right: 10vw;
@@ -41,4 +47,21 @@ form, .form-fields{
 	justify-content: space-between; */
 	flex-wrap: wrap;
 	padding-left: 10vw;
+}
+
+footer{
+	display: flex;
+	flex-direction: raw;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	color: black;
+	background-color: cyan;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+}
+
+.centered_video
+{
+	margin: 0 auto;	
 }
